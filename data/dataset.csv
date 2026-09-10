@@ -1,0 +1,372 @@
+assignment_id,source_file,inferred_prompt,text,label
+A01,Anecdota.docx,Write a short personal anecdote about an accident or memorable experience from your life.,"Kevin L. Ruiz Sanchez
+INGL3238-066
+Camille Cruz
+3 de diciembre de 2024
+Anécdota
+Poco después del huracán María, un día decidí salir a correr bicicleta por el parque de mi barrio. Estaba empezando a oscurecer, así que pensé en regresar a casa. Mientras iba de camino, me quedé mirando un carro que estaba delante de mí y no me di cuenta de que había un boquete en la carretera. Caí directamente en el boquete y terminé de boca contra el piso, frenando con el brazo. Al principio, me levanté pensando que no me había pasado nada grave. Sin embargo, al llegar a casa me di cuenta de que tenía el dedo lleno de sangre. Cuando me revisé bien, vi que tenía sangre desde el codo hasta la palma de la mano. Me asusté y corrí a limpiarme porque mi mamá me había advertido que no debía salir ese día. Sabía que, al verme, me iba a decir la famosa frase: “Te lo dije”.",human
+A01,AI counterpart for Anecdota.docx,Write a short personal anecdote about an accident or memorable experience from your life.,"A few years ago, I decided to go for a bike ride in my neighborhood late in the afternoon. The weather was calm, and I thought I still had enough daylight to make one more lap around the park before heading home. On the way back, I became distracted by a dog running along the sidewalk and failed to notice a deep crack in the road. My front tire hit it, and I went over the handlebars.
+
+For a few seconds I just sat there, embarrassed more than anything else. Then I noticed that my knee and elbow were scraped badly and that one of my hands was bleeding. I walked the bike home because the chain had fallen off and I did not want to risk another fall. When I arrived, my family immediately asked what had happened. The funniest part was that, before I left, I had been told to be careful because the roads were still damaged. I learned that sometimes the advice we ignore is exactly the advice we end up remembering.",ai
+A02,Dialogue.docx,Write a historical fictional dialogue set in 9 AD between Roman governor Publius Quinctilius Varus and Arminius about unrest among the Germanic tribes.,"Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+February 13, 2025
+Dialogue
+Context
+This dialogue occurs in 9 AD between the Roman Governor of Germania “Publius Quinctilius Varus” and his adoptive son “Gaius Julius Arminius”. Arminius was a tribute from the Barbaric Germanic Tribes, specifically from the “Cherusci” tribe. Varus adopted “Ari” (changing his name to Arminius) and cared for him as his own son. They were discussing how to deal with the rest of Germanic tribes who her on the edge of rebellion as Varus commanded him to take hostage the sons of the leaders of the tribes.
+Dialogue
+Arminius: “Father, the Reik (Tribe Leader) Marbod refused to give me his son, later on the other tribes have follow along with him.”
+Varus: “Are you saying these Barbaric dogs are rebelling against the might of the Empire?”
+Arminius: “I mean, they are on the edge of it, they keep ambushing our trade routs along the Germanic side of the Rhine.”
+Varus: “I think it’s time to teach a lesson to these barbarians, they face the army of the civilization.”
+Arminius: “It’s better to put out a small fire before the whole forest burns.”
+Varus: “What are you suggesting? To lure them all in a big battle?”
+Arminius: “No, let’s replicate the strategy of the Julius Caesar.”
+Arminius: “It’s better to pick them one by one and destroy them before the can group up into a whole army.”
+Varus: “I must plan this carefully, the paths to those tribes are still “Terra Incognita” (Unknown Lands).”
+Arminius: “Must of these lands were “Terra Incognita” and now they are part of our mighty empire and of course, you have me.”
+Arminius: “Remember, I was born a barbarian before you adopted me. I know the lands like the palm of my hand, I will guide you thorough and we will kill these dogs.”
+Varus: “You are right my son; we will mobilize our three legions and start a campaign against the Barbarians.”
+Arminius: “It’s the right thing to do father, let’s bring glory to Rome.”
+Varus: “What do you suggest?”
+Arminius: “I suggest we attack through the “Teutoburg Forest””
+Arminius: “We can protect out flanks through the narrow paths and protect the bulk of the army through the way.”
+Varus: “Alright my son, I will dismantle the camp and begin mobilization.”
+Varus: “Send word of this to the emperor, he should know the glory I will bring to the empire.”
+Arminius: “I will send word to Augustus (Roman Emperor at the time).”
+Arminius: “We have to be quick about this matter.”
+Varus: “Why my son?”
+Arminius: “The Marsi tribe has more than 20k troops.”
+Varus: “I know my son.”
+Arminius: “How?”
+Varus: “The leader of the Marsi tribe “Segimmer” was a tribute son like you.”
+Varus: “He was educated and trained in Rome to be a the leader of his tribe, now he is a client state of the empire.”
+Varus: “You don’t have to worry about him my son.”
+Arminius: “Ok father, I will send the messenger back to Rome then.”
+Varus: “Perfect my son, you are a true knight of the Roman Empire”.
+Varus: “As Reik of the Cherusci, you too will be a client state of the Empire”.
+Arminius: “Anything to serve the Empire!”",human
+A02,AI counterpart for Dialogue.docx,Write a historical fictional dialogue set in 9 AD between Roman governor Publius Quinctilius Varus and Arminius about unrest among the Germanic tribes.,"Context
+
+The following dialogue takes place in 9 AD in Roman-controlled Germania. Publius Quinctilius Varus, governor of the province, speaks with Arminius, a Cheruscan noble who was educated in Rome and served in the Roman military. Varus is concerned about growing resistance among the Germanic tribes.
+
+Dialogue
+
+Varus: The reports are becoming worse. Traders are being attacked, tribute is delayed, and several chiefs refuse to cooperate.
+
+Arminius: The tribes are angry, Father. They believe Rome is demanding too much too quickly.
+
+Varus: Rome demands order. Without order, there is only rebellion.
+
+Arminius: Then we should act before the tribes unite. A large campaign would give them a common enemy.
+
+Varus: What would you suggest?
+
+Arminius: Move against them separately. Show strength, but do not give them the chance to gather one great army.
+
+Varus: And how would we reach them? Much of the interior is still unknown to our officers.
+
+Arminius: I know those roads and forests. I was born among the Cherusci. Let me guide the legions.
+
+Varus: You would lead Roman soldiers against your own people?
+
+Arminius: I serve Rome. That is what Rome taught me.
+
+Varus: Very well. We will move the legions east and force the chiefs to submit.
+
+Arminius: The Teutoburg region offers the fastest route. The paths are narrow, but I can guide the column safely.
+
+Varus: Then prepare the scouts. I want the army ready to march.
+
+Arminius: As you command.
+
+Varus: When this is finished, Germania will finally understand Roman authority.
+
+Arminius: Yes, Father. Germania will remember this campaign for a very long time.",ai
+A03,Dialogue2.docx,Write a historical fictional dialogue set during the Golden Age of Piracy involving a young pirate and a former elite British soldier who meet near Jamaica.,"Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+February 21, 2025
+Dialogue 2
+Context
+This dialogue occurs in the 1730s (Piracy Golden Age). A young amateur pirate by the name Arthur “Ironside” has on his third raiding party on the island of Jamaica which was a British colony at the time. By the time spotted a lonely medium ship on the coast of Jamaica he took the opportunity to sack it. When he did, he encountered an ex elite British solider (The 1st Foot Guards (Grenadier Guards) – One of the oldest and most prestigious regiments, known for protecting the monarchy.) by the name Henry. He was highly trained, but he could not fight against all the pirates, and he was captured.
+Dialogue
+Henry: “You filthy dog, come and fight me one on one”
+Arthur: “Hahaha! You expect a fair fight from me? A Pirate?”
+Henry:” I guess you don’t have the courage to do it!”
+Arthur: “I just want your treasure. Of course, if you have any.”
+Henry: “Don’t you see I’m alone on the piece of shi* vessel? I don’t have anything to my name. Not even these bloody boat.”
+Arthur: “Bloody Hell mate, you should be the one robbing us then!”
+Henry: “I would take that in consideration, thanks you stupid dog!”
+Arthur: “What’s this tag you haven on your shirt?”
+Henry: “Don’t touch it! It’s a medal from the 1st British Foot Guards.”
+Arthur: “WHAT!? Le me get this straight. You are telling me that you were a British Elite soldier that won a medal on top of that, and you are more broke and us?”
+Henry: “That’s pretty much it.”
+Arthur: “How the fuc** does that happens? I thought Great Britain was the most powerful nation on earth. At least that’s what they say”
+Henry: “They are full of shi*. I broke my leg on battle and could not be part of the Elite force any longer. Then they refused to give me a pension because I’m from New York (Thirteen colonies) and it is not part of the homeland.”
+Arthur: “Are you fucking serious mate!? I feel sorry for you now.”
+Henry: “Ahh fuc* yourself, don’t be sorry for me. I’m a warrior. I do hope the Thirteen colonies rebel against that full of shit Great Britain. You know what!? I think someone like you would need someone of my experience in ground combat and I also have pretty good knowledge of naval combat.”
+Arthur: “Everyone who adds something of value is more than welcome to my ship. Welcome aboard!”
+Arthur proceeded to take off the handcuffs from Henry, as he was now the marshal of his fleet. This was a high ranking position between pirates or just naval fleets. It commands all the combat aspects of the crew and ship. They proceed to go to the cabin of the captain (Arthur) to discuss the next course of action of the fleet.
+Henry: “I do believe the best course of action is to go back to America, let’s stop trying to catch a little fish and let’s go catch the whole damn shark.”
+Arthur: “What do you mean?”
+Henry: “The Thirteen colonies are pissed to the English because of the high tax of everything, there’s been talks of a rebellion or perhaps a fight for independence. On my Opinion it’s a bit early for that but we must start training the colonies troops and gathering equipment for when the time comes to rise”
+Arthur: “How on Earth do you plan to do that?”
+Henry: “We have to unite all the states.”
+Arthur: “And?”
+Henry: “Look, there are my good generals of the colonies auxiliaries, with them we have a pretty good chance of putting up a fight against the British.”
+Arthur: “The colonies don’t have knower near the number of weapons and the equipment that the British have.”
+Henry: “Do you know how much time it takes to go from England to the colonies?”
+Arthur: “Weeks?”
+Henry: “Months!”
+Arthur: “What!?”
+Henry: “With that time we can take the majority of British forts on the colonies before the King even gets noticed of the Rebellion.”
+Arthur: “That sound pretty nice”
+Henry: “It is very nice!”
+As Arthur and Henry embark on there first of many missions together, Henry left Jamaica with a node on his throat. Jamaica had been his home since his early retirement form the British elite force. He felt a mix of sadness as he was about to betray his country but at the same time, he had to get vengeance as he believed the King had betrayed him first. It will be the last time they would be on the Jamaican port for a very long time, it would be known as where Henry Kenway died and where Henry “The Mad” was born!",human
+A03,AI counterpart for Dialogue2.docx,Write a historical fictional dialogue set during the Golden Age of Piracy involving a young pirate and a former elite British soldier who meet near Jamaica.,"Context
+
+The scene takes place near Jamaica during the Golden Age of Piracy. Arthur, an inexperienced pirate captain, has captured a small vessel and discovers that its only capable defender is Henry, a former British soldier.
+
+Dialogue
+
+Henry: If you are going to rob me, at least have the courage to face me without six men holding swords at my back.
+
+Arthur: Courage has very little to do with piracy. Staying alive is more useful.
+
+Henry: Then you are smarter than you look.
+
+Arthur: And you are poorer than a man guarding a ship ought to be. Where is the cargo?
+
+Henry: There is no cargo. I was trying to reach the colonies.
+
+Arthur: You fought like a soldier.
+
+Henry: I was one. First Foot Guards.
+
+Arthur: A royal guard? What happened?
+
+Henry: A musket ball shattered my leg. The army decided I was no longer useful, and the pension they promised never arrived.
+
+Arthur: So the Crown trained you, wounded you, and abandoned you.
+
+Henry: That is one way to describe it.
+
+Arthur: I could use someone who understands formations, artillery, and naval discipline.
+
+Henry: Are you offering me a place on a pirate ship?
+
+Arthur: I am offering you a place where ability matters more than your birthplace.
+
+Henry: Then take off these restraints.
+
+Arthur: Not until you promise not to stab me.
+
+Henry: I promise to wait at least until tomorrow.
+
+Arthur: Good enough.
+
+Later, in the captain's cabin, Henry studies a map of the Atlantic colonies.
+
+Henry: You waste your time chasing small merchant ships.
+
+Arthur: And what should we chase instead?
+
+Henry: Opportunity. The colonies are becoming angry with Britain. Trade restrictions, taxes, soldiers—pressure is building.
+
+Arthur: You expect them to rebel?
+
+Henry: Not tomorrow. But someday. And when they do, men who know how to fight will become valuable.
+
+Arthur: Then perhaps we should make sure we are there when that day comes.",ai
+A04,Ekphrasis.docx,"Write an ekphrasis response to two paintings. Describe what you see, explain what each image makes you think and feel, and give each painting a title.","Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+October 31st, 2024
+Ekphrasis
+Picture I
+I see a bunch of figures and faces interlacing each other across the painting. All of that red makes me feel like I’m in a battle zone. “1415, The Battle of Agincourt comes to an end, the floor is a sea of blood, filled with corpses and arrows thrown by the English elite Bowmen. The French Crown has fallen to Henry the V.” Honestly that’s what it makes me feel like. It looks like faces on a floor of blood. The inconsistent patterns depict all the corpses, one on top of the other. There is also like a horse, specifically a white horse across the painting. This is the perfect picture to show the battle. The white horse of Henry the V ( I don’t think it was white but bear with me) riding across the battlefield, boosting the morale of his men. There is also like some time of window, those window that are often on the cathedrals or catholic churches. This reminds me the end of the movie “The King” which explains the early life of Henry the V as King. The end of the movie is at his palace, and he has windows like the one on the drawing. This kind of window is very common in the churches where I spent my childhood, loved those. But yeah, in conclusion this art reminds me of or makes me think about the sort of battle going on. Especially in the eyes of a soldier in the middle of the battle where he doesn’t understand anything and all he sees is blood and corpses, I would call these painting “The Conqueror’s Morale”.
+Picture II
+This painting reminds me of a painting like a lot (don’t remember the name of it). This painting has a blueish tone, like it representing the sweet night on a local town around the 1700s. It makes me feel like I’m in Milan around the Renaissance era. It has a touch of the Mona Lisa for me, the way the woman is seated and depicted has a similarity to the painting of the Mona Lisa by Leonardo Da Vinci. The painting has like to red triangles on the side of the woman but honestly, I don’t understand that part, it seems out of place. The way the eyes are placed seems the woman has a bit of sadness she is trying so hard to hide but it shows a bit. The blue of the sky, almost like the blue of the sea, makes a perfect depiction of been in that era just sitting on the shore watching the sea. The short brown hair of the woman shows a stylish way to have it. The texture of the painting suggests that it was done with some kind of oil or acrylic paint. The brushstrokes are clear and visible, giving it a touch of raw and natural human touch. In conclusion the painting makes me think of Renaissance Italy with the fall of the Sun and the peace of the Sea, “I would call these painting “Italian Shore””.",human
+A04,AI counterpart for Ekphrasis.docx,"Write an ekphrasis response to two paintings. Describe what you see, explain what each image makes you think and feel, and give each painting a title.","Picture I
+
+The first painting feels crowded and intense. The overlapping faces and figures create the impression that many events are happening at once, almost as if the viewer has entered the middle of a battle. The strong red tones make me think of danger, violence, and confusion. A pale horse stands out from the surrounding shapes and gives the scene a sense of movement. The image also contains forms that remind me of old cathedral windows, which creates an interesting contrast between destruction and something sacred.
+
+Rather than seeing a specific historical event, I imagine the painting as the memory of a soldier after a battle. Individual people and objects are no longer perfectly clear; everything has blended together into fragments of color, fear, and movement. I would title this painting ""After the Charge.""
+
+Picture II
+
+The second painting produces a much calmer feeling. Its cool blue tones suggest evening near the sea, and the seated woman immediately becomes the center of the composition. Her expression seems quiet but slightly sad, as if she is thinking about something she does not want to say aloud. The pose and balance of the image remind me of traditional Renaissance portraits, while the visible brushwork keeps it from feeling completely polished.
+
+The contrast between the peaceful background and the woman's expression is what interests me most. The setting appears calm, but her face suggests that something is unresolved. I would title this painting ""Quiet Evening"" because the image feels peaceful on the surface while still containing a small sense of mystery.",ai
+A05,Ensayo Mayra Montero.docx,"Write a short opinion essay responding to Mayra Montero's ideas about the university system, including whether university is worthwhile and how students should choose what to study.","Ensayo Mayra Montero
+Mayra Montero expone en su ensayo sobre la Universidad una crítica hacía el sistema educativo y el ambiente de esta. Estoy 100% de acuerdo con el ensayo de Mayra Montero y todo lo que este expone, la universidad es algo tan crucial que puede ayudarte a lograr tus metas o retrasarte en las misma. Más de la mitad de los estudiantes que entra cada año a la universidad no saben que quieren estudiar y peor aún la mayoría no saben ni si quieren estudiar o que hacer con su vida, y esto es normal en la mayoría de los casos porque apenas estamos empezando a ser adultos (legalmente) y muchos nunca han tenido que tomar decisiones por si mismo y lo hacen por complacer a sus padres. Lo que muchos padres no entienden es que los tiempos han cambiado y ya un diploma universitario en el 80% de los casos no sirve para nada, al final del día alguien que se esforzó estudiando termina con dificultades para conseguir trabajo o también terminan ejerciendo algo que nada que ver con su diploma. 
+Entonces surge la pregunta de que si vale la pena estudiar. Realmente considero que es depende el caso, si vas a estudiar que sea algo que te apasione y que bastante demanda o algo similar, porque vamos a ser realistas, por más que algo te apasione si no te ayuda económicamente, va a ser bien difícil ejercerlo, pero lo más importante es que te apasione. Si no saben que estudiar es mejor cogerse un año sin estudiar o los que sean necesarios antes de tomar una decisión que define la mayor parte de tu vida.",human
+A05,AI counterpart for Ensayo Mayra Montero.docx,"Write a short opinion essay responding to Mayra Montero's ideas about the university system, including whether university is worthwhile and how students should choose what to study.","Mayra Montero's discussion of the university system raises an important question about what higher education is supposed to provide. I agree with the idea that attending a university should not be treated as an automatic decision for every young person. Many students enter college immediately after high school without knowing what they want to study, what kind of career they want, or even whether a university degree is necessary for their goals.
+
+University can still be extremely valuable. It can provide specialized knowledge, professional opportunities, mentors, and access to experiences that are difficult to obtain elsewhere. However, the value of a degree depends greatly on the student's goals and on how intentionally that student uses the opportunity. Choosing a major only because of family pressure or social expectations can lead to frustration and wasted time.
+
+For that reason, I believe students should be encouraged to explore their interests before making such an important commitment. Taking time away from school, working, learning independently, or changing majors should not automatically be viewed as failure. The most important thing is to make an informed decision. A university education can open doors, but it should be one possible path toward a meaningful career rather than a requirement followed without question.",ai
+A06,Exercise #2 English.docx,"Answer two short writing-class questions: what should we do with our thoughts before publishing them, and what does a translation example involving 'Cuando despertó' show about differences between Spanish and English?","Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+October 31st, 2024
+Exercise # 2
+What are we going to do with our thoughts?
+Look at them
+Edit them
+Proofread them
+Share and get feedback
+To publish them
+The video of the dinosaur explains the translations between English and Spanish. It states that in English you cannot translate exactly “Cuando despertó” because it means “When woke”, that does not make sense. In English you need to put a noun “he” or “she”.",human
+A06,AI counterpart for Exercise #2 English.docx,"Answer two short writing-class questions: what should we do with our thoughts before publishing them, and what does a translation example involving 'Cuando despertó' show about differences between Spanish and English?","1. What are we going to do with our thoughts?
+
+Before publishing our thoughts, we should review and develop them. This includes looking at what we have written, editing the ideas for clarity, proofreading for mistakes, sharing the work with others, receiving feedback, and making final revisions before publishing.
+
+2. What does the dinosaur video explain about translation between English and Spanish?
+
+The example shows that translation is not always word-for-word. Spanish can omit the subject of a sentence because the verb form can communicate who is performing the action. In English, a sentence such as ""Cuando despertó"" cannot normally be translated literally as ""When woke."" English usually requires an explicit subject, such as ""When he woke up"" or ""When she woke up."" The example demonstrates that good translation must consider the grammar of each language instead of replacing each word individually.",ai
+A07,Fan Fiction.docx,Write fan fiction that continues the Netflix series Barbarians after Thusnelda is captured. Create two imagined follow-up episodes and briefly explain why you like the show.,"Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+May 8, 2025
+Fan Fiction
+Barbarians Episode 7 (Netflix)
+Right after Thusnelda was captured by Tiberius and his son Germanicus they went on a journey to the heart of the world, Rome, the capital of the Roman Empire 11AD. Tiberius was a highly commander in the roman army. By 11AD he was on the Roman province Germania on today’s Germany. He was sent by his adoptive father and Emperor Augustus. Right after the capture of Thusnelda and the fall of Tiberius camp on Germania by the Barbarians, they were on the journey to deliver the captive to the capital of the Roman Empire. The husband of Thusnelda, Ari was injured in the battle of Tiberius’ camp. When he got the news that his wife was captured by his previous commanders, he enraged so hard that he said out loud “I will burn to the ground those Roman dogs!”. He gathered a 50 men party to go save his wife. Taking to account that Ari was a German tribute of peace to the romans and he was part of the Roman army; he knew that normally a military travel from the Rhine River to Rome took approximately 30 days. But he also knew that a horseback trip took half the time. He used this to his advantage and took off with his men with only four hours of rest every day. He was determined to find his wife no matter what the cost will be.
+Barbarians Episode 8 (Netflix)
+After 10 days of riding day and night with only 4 hours to rest and eat. Ari (Arminius) saw a military party with the Tiberius clan flag in the horizon. Ari knew he could not defeat Tiberius with his 50 men party; he would find another and smarter way to rescue his wife. He knew that taking a roman legion’s standard was the biggest offense and disgrace a roman legion could suffer. He used this to his advantage and planned a way to rob a roman standard as a distraction. After two days of planning, he went right on with the plan. On the night of the action, he infiltrated some friends that were previously on the roman army and knew how to speak Latin. They went and grabbed the standard, but on their way to the exit they made sure that everyone knew they were taking the standard. The whole legion went on pursue like crazy for the standard, leaving Tiberius with less than 70 men protecting him and the captive (Thusnelda). Ari emerged from the bushes and screamed “Tiberius!!!!! You have something that belongs to me you stupid dog.” Tiberius sent his men to charge on Ari, but as the legionaries charged on Ari they suddenly fell on a big hole filled with wood spears, killing 45 of the 70 men. When Tiberius tried to run, Ari whistle and Ari’s men emerged from the forest on horseback and charged on Tiberius last men. Tiberius fell from his horse and Ari walk slowly towards him. As Ari put his sword on Tiberius chest, he said to him” Any last word?” Tiberius said, “The whole of Germania will arghhh….”. Ari stabbed him with his sword through his heart. Ari rescued Thusnelda and went on a journey to find a new home on the far east.
+The End.
+Why I like this show?
+Honestly, I love everything Rome related so yeah hahaha. When I heard this show was coming out I was super hyped so this is one of my favorites, if not my favorite!",human
+A07,AI counterpart for Fan Fiction.docx,Write fan fiction that continues the Netflix series Barbarians after Thusnelda is captured. Create two imagined follow-up episodes and briefly explain why you like the show.,"Barbarians — Imagined Episode 7
+
+After Thusnelda is captured, Tiberius orders his men to travel south before the Cherusci can organize a rescue. Arminius is wounded, but the news of his wife's capture forces him back into action. Instead of gathering a large army, which would move too slowly, he chooses a small group of experienced riders who know Roman roads and military routines.
+
+Arminius understands that he cannot attack an entire Roman force directly. His years of service in Rome taught him that a disciplined army is strongest when it can stay organized. He therefore decides that the only realistic strategy is to separate the escort from its larger force.
+
+Barbarians — Imagined Episode 8
+
+Several days later, Arminius discovers the Roman column near a forest road. His scouts create false tracks suggesting that a larger Germanic force is approaching from the east. At the same time, another group attacks a supply wagon and disappears into the forest. Tiberius sends part of his soldiers to investigate, reducing the number of men guarding the prisoners.
+
+Arminius waits until night. His riders quietly attack the remaining guards from two directions while another group cuts the horses loose to create confusion. Thusnelda escapes during the fighting, and Arminius orders an immediate retreat rather than trying to destroy the Roman force. The rescue succeeds because he uses Roman discipline against the Romans themselves.
+
+Why I Like the Show
+
+I enjoy Barbarians because it combines history, political conflict, and large military events with personal relationships. I especially like stories involving Rome, so seeing the conflict between Roman culture and the Germanic tribes makes the series interesting to me. Arminius is also a compelling character because he understands both worlds and is constantly forced to choose between them.",ai
+A08,Kafka.docx,"Write a surreal Kafka-inspired short story about a mysterious train, using uncertainty, repetition, and an unsettling ending.","Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+April 11, 2025
+Exercise on Kafka
+Endless Tracks
+September 1942, Paris (By German Occupation). I’m stationed on the important station of Gare du Nord since we conquered France in 1940.  It was a bit odd because I did not really remember when I was drafted into this hole. I really miss my mother and my girlfriend but as hard as I try, I could not remember the last time I saw them. It is like yesterday I was at home but now I’m here, all tired of this. On those days I kept seeing trains saying, “People on board”, but I never saw anyone getting off the train nor getting in. You could say maybe they were carrying supplies and other stuff but no, the German government have very specific trains for people and for supplies. Each train can carry what it was designed for.
+One the day I saw something very strange, I saw a train pretty old and damaged with a label that said only “Zurück” which means backwards. This is very odd because all trains must be able to go forward and backwards. I let the thought out of my mind for I while, but it kept coming back over and over again. Eventually I decided to check the book of trains for arrival and departure, for my surprise I could not find that train, it was like it did not existed. This was very rare because this station is very busy, and every departure slot is heavily needed. Later on, I went to my command officer for permission to investigate this situation and as I mentioned him the suspicious train, he told me “There is no such train, this weekend all the trains that will come are for military supplies purposes”. I tried to explain to him what I saw but he left as he had an important meeting with the higher ranks of the Wehrmacht.
+Later on, I decided to take matters into my own hands as I wanted to know what the hell was that train doing in the stating I was protecting. The day after I went to the train driver and asked him when they were for departure, he told my “May 7, 1945” -as he smiled. I was a bit confused but later on everyone understood what that date meant. I ignored him and stepped in in the train. As I walked thorough the train, I noticed there were no seats, I found a lady that worked on the train and asked here where were the seats of the train and she told me the seats were further back as that wagon was on redesigning. I went to the other wagon, and it was the same thing, no seats. I asked another lady, and she told me the same thing. As I jumped from wagon to wagon, I got mad I just sat on the floor.
+I began to write on my notebook the conditions of the train for my report once I got off the train. As the train departed and started moving, I began to have a strong and weird sleepiness, I just laid myself on the floor and fell asleep. As I woke up form the nap I felt a bit of pain on my leg, as I checked I noticed I had a big bite mark on the side of my right leg. I got a bit scared at first but then I got very mad. I got up and went to find a train assistant to claim her for that bite but for my surprise I did not find any assistant no matter how many wagons I went through. I decided to go to the train driver to ask him what was going on. As I arrived to the driver cabin, he was stunned to see me and asked me what the hell I was doing on his train. I explained to him that I was an officer from the Paris station on an inspection duty. He looked at me a bit confused as he told me this train has not stopped moving since it departed from Frankfurt. I was even more confused, but he showed me a map of France and showed me where the train was headed and as he did that, I saw his arm and it had a bite tattoo on it. As I looked closely, I noticed it was the same bite pattern I had on my leg. I told him to stop the train immediately and he said that train cannot and will not moving as it always goes backwards (Zurück) as he laugh heavily. I freaked out and began running through the wagons but, at the time I’m writing this it has been 3 months since that event, and I have not found the end of the train.",human
+A08,AI counterpart for Kafka.docx,"Write a surreal Kafka-inspired short story about a mysterious train, using uncertainty, repetition, and an unsettling ending.","The Last Platform
+
+Every morning, Elias arrived at Platform Six at exactly 7:14. He did not remember choosing this routine, but the station clock always showed 7:14 when he entered, no matter how early he left home.
+
+One Tuesday, a train appeared with no destination displayed. Its windows were dark, and the conductor stood beside an open door holding a list of passengers.
+
+""Your name is here,"" the conductor said.
+
+Elias looked at the list. His name appeared three times.
+
+""There must be a mistake.""
+
+""There are no mistakes on the railway.""
+
+Elias refused to board. He returned home, but the next morning the train was waiting again. This time his name appeared six times. On Thursday it appeared twelve times.
+
+He complained to the station manager.
+
+""There is no Platform Six,"" the manager replied.
+
+Elias turned around. Through the office window he could clearly see the platform and the black train.
+
+""Then what is that?""
+
+The manager closed the blinds.
+
+On Friday, Elias decided to leave the city. He packed a suitcase, walked to the bus terminal, and purchased a ticket to another town. When the bus doors opened, however, the same conductor was standing inside.
+
+""Your name is here,"" he said.
+
+Elias ran.
+
+He ran through streets he had known since childhood, but every intersection returned him to the station. The clock above the entrance read 7:14.
+
+Eventually he stopped resisting and stepped onto the train.
+
+Inside, every seat was occupied by a man who looked exactly like him.
+
+One of them leaned closer and whispered, ""Do not worry. None of us remember getting on either.""
+
+The doors closed.
+
+The train began moving.
+
+Years later, the station still announces its arrival every morning at 7:14, although no passenger has ever reported seeing it.",ai
+A09,Munich Agreement.docx,"Retell the Munich Agreement as a dramatic fictional scene focused on political tension, delay, appeasement, and the consequences of the agreement.","Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+March 17, 2025
+Retelling
+Munich Agreement
+The dark room filled with the ink drying on the treaties that meant nothing to the world. This game has been played way too long. The handshakes, the smiles, the suits, the flags, all for what? I stand there in amusement, watching the charade of peace. “You’re hesitating way too much” I said, “That’s unlike you.” He showed a face with almost no unpredictable frustration. “Do you know what the hell you are asking me?” he said. I leaned a bit forward and said, “Of course I know what I’m asking you to do, I want to you to step on a stage where history will not remember you as the hero of this magnificent story.” “Not even as the villain they will remember you.” Those words hit him like a cold shower as he contemplated what he was about to do. “History will remember you just as a signature on a document.” He turned his head to the window as he contemplated the continuous life go on and on, uninterrupted, unaware, uninterested. “Do you really don’t know what we just did here?” “We are delaying the inevitable” he stands there with anger and frustration in his eyes. “I know, but you know what also delaying means, It means preparation, it buys us precious time to be prepare for what we aren’t prepare right now, nor we will be fully prepare for when the time comes.” “Delay means acceptance” I replayed. “You are just surrendering in a pretty way, the moment to act is now before it is too late.” He crossed his arms and said nothing. I stood there and waled toward a bookshelf, contemplating life and watching a collection of books no one has seen nor touch in years. The kind of knowledge people love to surround themselves with but never put in practice. “The wars are fought here. The world says that wars are fought with guns, bombs, planes but what the hell. The real wars are fought here! Bunch of old people that can’t get along and just send their young people to do the fighting for them. The real wars are fought in rooms like this, with conversations like this. You don’t realize it yet, but we’ve already lost.” He looked at me with frustration and flashing eyes. “We have not lost; we are an Empire”. “Are you sure about that? Sign it then.” He stared at me. He was thinking of all those promises, the borders, the territories, the families that will be tear apart and all the bullshit stated between statesmen who would not live enough to see them happen. He was thinking of how history will put them, what would the write about them, he hoped that history would not see the as mediators or heroes. He was thinking about that last drop of ink dropped on the last paper of the treaty. “Good, now watch.” At first, he hesitated but as he took a big breath and boom, the ink bled into the fibers and page of the treaty, the decision is done, the race has begun. “Do you really believe you have prevented war?” I spoke. I turned toward the door, leaving him alone to carry the weight of the decision he had just made, he would have to carry the weight of those families what will be murder, tear apart, the families without their father. “You are not the first man to sign away the future and the world, and certainly you would not be the last”.
+On the 15 of March 1939, Hitler took the rest of Czechoslovakia. And with that violating the Munich Agreement.",human
+A09,AI counterpart for Munich Agreement.docx,"Retell the Munich Agreement as a dramatic fictional scene focused on political tension, delay, appeasement, and the consequences of the agreement.","The room was quiet except for the movement of papers across the table. Maps of Czechoslovakia lay between the delegations, covered with lines that could change the lives of millions of people.
+
+""You call this peace?"" one adviser asked.
+
+The prime minister looked toward the signed agreement. ""I call it time.""
+
+""Time for whom?""
+
+""For us to prepare.""
+
+The adviser walked to the window. Outside, cameras flashed and officials smiled for photographs. ""They will tell the public that war has been avoided.""
+
+""For now, perhaps it has.""
+
+""You know that is not what this means. We have accepted one demand because we are afraid of the next.""
+
+The prime minister remained silent.
+
+The adviser pointed toward the map. ""Those borders are not simply lines. There are towns, families, factories, defenses. We are discussing them as if they were pieces on a board.""
+
+""And what would you have me do? Begin a war tonight?""
+
+""I would have us admit what we are doing. This agreement does not remove the danger. It postpones it.""
+
+The prime minister picked up his pen. ""Sometimes postponement is all a government can buy.""
+
+""And sometimes the price of that time is paid by someone else.""
+
+For several seconds neither man spoke. Then the final signature was placed on the document.
+
+Outside, the photographers continued taking pictures of men celebrating peace.
+
+Months later, German forces occupied the rest of Czechoslovakia. The paper that had been presented as a solution had become evidence of how temporary the solution really was.",ai
+A10,My Major Short Story.docx,Write a short creative story connecting a concept from Software Engineering or Data Structures to an everyday-life metaphor.,"Kevin L. Ruiz Sanchez
+INGL3286
+Prof. Rios
+March 28, 2025
+My Major: Short Story
+Stacks (Software Engineering)
+Every time a wake up the only thing I can think of is pancakes. I love the way they look when you stack them up, with the butter on top. They way the last pancake you stack is the one you it first. It is kind of funny because it is not like normal waiting lines where the first one who arrived is the first one to be served, no it quite the opposite. The first one to be stacked is the last one to be eaten. Just think about when put the plates on your kitchen, you always take the first one on top right? Well, I don’t know why but that’s what I love about, not necessarily the first one to be stacked is the first one you are going to take. Each pancake has their one story, their one flavour, their one personality. When I go to sleep, I always think about the last pancake I ate. The deeper I go on the pancake stack, the deeper I must go in the past. They always make me think or reflect that; the latest things that happened in our life are often the ones we must deal with first. Maybe that’s why I love the stacks so much on my programming class Data Structures.",human
+A10,AI counterpart for My Major Short Story.docx,Write a short creative story connecting a concept from Software Engineering or Data Structures to an everyday-life metaphor.,"Stacks
+
+I used to think that the easiest way to understand programming was to stare at code until the idea finally made sense. Then one afternoon I noticed a stack of trays in a cafeteria.
+
+A worker placed a clean tray on top. A few seconds later, a customer took that same tray. Another tray was added, and again the newest tray was the first one removed.
+
+That pattern immediately reminded me of a stack in data structures.
+
+A stack follows the principle of last in, first out. The most recently added item is the first one that can be removed. It is similar to stacking plates, books, or trays: you normally take the item from the top instead of pulling one from the bottom.
+
+The more I thought about it, the more I realized that programming concepts are often descriptions of patterns we already see in everyday life. A stack is not difficult because computers invented a strange new idea. It is simply a familiar idea expressed in a precise way.
+
+Now, whenever I work with stacks in code, I picture that cafeteria. One tray goes on top, and one tray comes off the top. Sometimes the simplest examples make the most technical concepts easier to remember.",ai
