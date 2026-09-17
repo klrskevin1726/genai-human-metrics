@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import GroupShuffleSplit
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 DATASET = Path(__file__).resolve().parent.parent / "data" / "dataset.csv"
 
@@ -49,6 +49,12 @@ model.fit(X_train_tfidf, y_train)
 predictions = model.predict(X_test_tfidf)
 accuracy = accuracy_score(y_test, predictions)
 
+coef_series = pd.Series(model.coef_[0], index=vectorizer.get_feature_names_out())
+coef_sorted = coef_series.sort_values()
+
+print(classification_report(y_test, predictions))
+print(confusion_matrix(y_test, predictions))
+
 print("Predictions:")
 print(predictions)
 
@@ -56,6 +62,12 @@ print("\nActual labels:")
 print(y_test.to_numpy())
 print("\nAccuracy:")
 print(f"{accuracy:.2%}")
+
+print("\nTop words that incline towards AI:")
+print(coef_sorted.head(20))
+
+print("\nTop words that incline towards Human:")
+print(coef_sorted.tail(20))
 
 
 # print("Training matrix shape:", X_train_tfidf.shape)
