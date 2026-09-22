@@ -4,10 +4,14 @@ from sklearn.model_selection import GroupShuffleSplit
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from structural_features import sentence_stats
 
 DATASET = Path(__file__).resolve().parent.parent / "data" / "dataset.csv"
 
 df = pd.read_csv(DATASET)
+df = df[df["label"].isin(["human", "ai"])]
+df["avg_sentence_len"], df["sentence_len_std"] = zip(*df["text"].apply(sentence_stats))
+group_stats = df.groupby("label")[["avg_sentence_len", "sentence_len_std"]].mean()
 
 X = df["text"]
 y = df["label"]
@@ -52,22 +56,22 @@ accuracy = accuracy_score(y_test, predictions)
 coef_series = pd.Series(model.coef_[0], index=vectorizer.get_feature_names_out())
 coef_sorted = coef_series.sort_values()
 
-print(classification_report(y_test, predictions))
-print(confusion_matrix(y_test, predictions))
+# print(classification_report(y_test, predictions))
+# print(confusion_matrix(y_test, predictions))
 
-print("Predictions:")
-print(predictions)
+# print("Predictions:")
+# print(predictions)
 
-print("\nActual labels:")
-print(y_test.to_numpy())
-print("\nAccuracy:")
-print(f"{accuracy:.2%}")
+# print("\nActual labels:")
+# print(y_test.to_numpy())
+# print("\nAccuracy:")
+# print(f"{accuracy:.2%}")
 
-print("\nTop words that incline towards AI:")
-print(coef_sorted.head(20))
+# print("\nTop words that incline towards AI:")
+# print(coef_sorted.head(20))
 
-print("\nTop words that incline towards Human:")
-print(coef_sorted.tail(20))
+# print("\nTop words that incline towards Human:")
+# print(coef_sorted.tail(20))
 
 
 # print("Training matrix shape:", X_train_tfidf.shape)
@@ -82,3 +86,6 @@ print(coef_sorted.tail(20))
 
 # print("\nTest assigments ID's:")
 # print(df.iloc[test_idx]["assignment_id"].unique())
+
+print(df[["label", "avg_sentence_len", "sentence_len_std"]].head())
+print(group_stats)
