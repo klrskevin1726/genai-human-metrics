@@ -4,12 +4,16 @@ from sklearn.model_selection import GroupShuffleSplit
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from structural_features import sentence_stats
+from structural_features import sentence_stats, lexical_diversity, avg_word_length, punctuation_rate
 
 DATASET = Path(__file__).resolve().parent.parent / "data" / "dataset.csv"
 
+
 df = pd.read_csv(DATASET)
 df = df[df["label"].isin(["human", "ai"])]
+df["punctuation_rate"] = df["text"].apply(punctuation_rate)
+df["ttr"] = df["text"].apply(lexical_diversity)
+df["avg_word_length"] = df["text"].apply(avg_word_length)
 df["avg_sentence_len"], df["sentence_len_std"] = zip(*df["text"].apply(sentence_stats))
 group_stats = df.groupby("label")[["avg_sentence_len", "sentence_len_std"]].mean()
 
@@ -56,6 +60,15 @@ accuracy = accuracy_score(y_test, predictions)
 coef_series = pd.Series(model.coef_[0], index=vectorizer.get_feature_names_out())
 coef_sorted = coef_series.sort_values()
 
+
+feature_columns = [
+    "avg_sentence_len",
+    "sentence_len_std",
+    "ttr",
+    "avg_word_length",
+    "punctuation_rate"
+]
+
 # print(classification_report(y_test, predictions))
 # print(confusion_matrix(y_test, predictions))
 
@@ -87,5 +100,16 @@ coef_sorted = coef_series.sort_values()
 # print("\nTest assigments ID's:")
 # print(df.iloc[test_idx]["assignment_id"].unique())
 
-print(df[["label", "avg_sentence_len", "sentence_len_std"]].head())
-print(group_stats)
+
+
+# print(df[["label", "avg_sentence_len", "sentence_len_std"]].head())
+# print(group_stats)
+
+# print("\n")
+# print(df.groupby("label")["avg_word_length"].mean())
+# print("\n")
+# print(df.groupby("label")["ttr"].mean())
+# print("\n")
+# print(df.groupby("label")["punctuation_rate"].mean())
+
+print(df.groupby("label")[feature_columns].mean())
