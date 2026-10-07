@@ -1,0 +1,5 @@
+Si estas en un computadora del Colegio, ejecuta esto en la terminal:
+
+py -m pip install --target "$env:LOCALAPPDATA\genai-python-libs" --upgrade --force-reinstall pandas scikit-learn
+$env:PYTHONPATH="$env:LOCALAPPDATA\genai-python-libs"
+$env:PYTHONNOUSERSITE="1"
