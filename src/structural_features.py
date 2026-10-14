@@ -60,5 +60,3 @@ def punctuation_rate(text):
         return punctuation_count / len(text)
     else:
         return 0.0
-    
-print(punctuation_rate("Hello, world! How are you?"))

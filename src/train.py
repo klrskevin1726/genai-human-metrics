@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from structural_features import sentence_stats, lexical_diversity, avg_word_length, punctuation_rate
+from sklearn.preprocessing import StandardScaler
 
 DATASET = Path(__file__).resolve().parent.parent / "data" / "dataset.csv"
 
@@ -68,6 +69,47 @@ feature_columns = [
     "avg_word_length",
     "punctuation_rate"
 ]
+X_structural = df[feature_columns]
+
+X_structural_train = X_structural.iloc[train_idx]
+X_structural_test = X_structural.iloc[test_idx]
+
+
+scaler = StandardScaler()
+
+X_structural_train_scaled = scaler.fit_transform(X_structural_train)
+X_structural_test_scaled = scaler.transform(X_structural_test)
+
+
+structural_model = LogisticRegression(
+    max_iter = 2000,
+    random_state = 42
+)
+
+structural_model.fit(
+    X_structural_train_scaled,
+    y_train
+)
+
+
+
+structural_predictions = structural_model.predict(
+    X_structural_test_scaled
+)
+
+
+structural_accuracy = accuracy_score(
+    y_test,
+    structural_predictions
+) 
+
+structural_coef = pd.Series(
+    structural_model.coef_[0],
+    index=feature_columns
+)
+
+
+
 
 # print(classification_report(y_test, predictions))
 # print(confusion_matrix(y_test, predictions))
@@ -113,3 +155,14 @@ feature_columns = [
 # print(df.groupby("label")["punctuation_rate"].mean())
 
 print(df.groupby("label")[feature_columns].mean())
+
+print("\nTF-IDF accuracy:", f"{accuracy:.2%}")
+print("Structural accuracy:", f"{structural_accuracy:.2%}")
+
+print("\nStructural feature coefficients:")
+print(structural_coef.sort_values())
+
+
+# What identifying criteria actually contribute to distinguishing human generated and machine generated writing?
+
+#One of the strongest identifying criteria I found is average word length. Longer average word length is associated with the machine-generated samples in this dataset. On the human side, sentence-length variability appears to be an important criterion: human texts tend to vary more in sentence length.

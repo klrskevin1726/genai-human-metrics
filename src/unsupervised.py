@@ -2,7 +2,11 @@ from pathlib import Path
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
+from sklearn.metrics import (
+    silhouette_score,
+    adjusted_rand_score,
+    normalized_mutual_info_score
+)
 from sklearn.preprocessing import StandardScaler
 from structural_features import (
     sentence_stats,
@@ -23,6 +27,7 @@ df["punctuation_rate"] = df["text"].apply(punctuation_rate)
 df["avg_sentence_len"], df["sentence_len_std"] = zip(
     *df["text"].apply(sentence_stats)
 )
+
 feature_columns = [
     "avg_sentence_len",
     "sentence_len_std",
@@ -56,6 +61,13 @@ kmeans_structural = KMeans(
     random_state=42
 )
 structural_clusters = kmeans_structural.fit_predict(X_structural_scaled)
+true_labels = df["label"].map({
+    "ai": 0,
+    "human": 1
+})
+ari = adjusted_rand_score(true_labels, structural_clusters)
+nmi = normalized_mutual_info_score(true_labels, structural_clusters)
+
 df["structural_cluster"] = structural_clusters
 structural_score = silhouette_score(
     X_structural_scaled,
@@ -81,3 +93,9 @@ print("\nStructural clusters vs labels:")
 print(pd.crosstab(df["structural_cluster"], df["label"]))
 
 print("\nStructural silhouette score:", structural_score)
+
+print("\nAdjusted Rand Index:", ari)
+print("Normalized Mutual Information", nmi)
+
+
+# What identifying criteria actually contribute to distinguishing human generated and machine generated writing?
