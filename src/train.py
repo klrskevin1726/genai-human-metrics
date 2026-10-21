@@ -1,4 +1,5 @@
 from pathlib import Path
+import statistics
 import pandas as pd
 from sklearn.model_selection import GroupShuffleSplit
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -103,6 +104,193 @@ structural_accuracy = accuracy_score(
     structural_predictions
 ) 
 
+print("\nFeature Ablation Results:")
+
+for feature_to_remove in feature_columns:
+
+    reduced_features = [
+        feature for feature in feature_columns
+        if feature != feature_to_remove
+    ]
+
+    X_reduced = df[reduced_features]
+
+    X_reduced_train = X_reduced.iloc[train_idx]
+    X_reduced_test = X_reduced.iloc[test_idx]
+
+    scaler_reduced = StandardScaler()
+
+    X_reduced_train_scaled = scaler_reduced.fit_transform(
+        X_reduced_train
+    )
+
+    X_reduced_test_scaled = scaler_reduced.transform(
+        X_reduced_test
+    )
+
+    reduced_model = LogisticRegression(
+        max_iter=2000,
+        random_state=42
+    )
+
+    reduced_model.fit(
+        X_reduced_train_scaled,
+        y_train
+    )
+
+    reduced_predictions = reduced_model.predict(
+        X_reduced_test_scaled
+    )
+
+    reduced_accuracy = accuracy_score(
+        y_test,
+        reduced_predictions
+    )
+
+    print(
+        f"Without {feature_to_remove}: "
+        f"{reduced_accuracy:.2%}"
+    )
+
+
+
+
+multi_split_results = []
+ablation_results = {
+    feature: []
+    for feature in feature_columns
+}
+
+for seed in range(20):
+
+    splitter = GroupShuffleSplit(
+        n_splits=1,
+        test_size=0.30,
+        random_state=seed
+    )
+
+    train_idx, test_idx = next(
+        splitter.split(
+            df["text"],
+            df["label"],
+            groups=df["assignment_id"]
+        )
+    )
+
+    y_train = df["label"].iloc[train_idx]
+    y_test = df["label"].iloc[test_idx]
+
+    # Full structural model
+    X_structural = df[feature_columns]
+
+    X_train_structural = X_structural.iloc[train_idx]
+    X_test_structural = X_structural.iloc[test_idx]
+
+    scaler = StandardScaler()
+
+    X_train_scaled = scaler.fit_transform(
+        X_train_structural
+    )
+
+    X_test_scaled = scaler.transform(
+        X_test_structural
+    )
+
+    model = LogisticRegression(
+        max_iter=2000,
+        random_state=42
+    )
+
+    model.fit(
+        X_train_scaled,
+        y_train
+    )
+
+    predictions = model.predict(
+        X_test_scaled
+    )
+
+    full_accuracy = accuracy_score(
+        y_test,
+        predictions
+    )
+
+    multi_split_results.append(
+        full_accuracy
+    )
+
+    # Feature ablation
+    for feature_to_remove in feature_columns:
+
+        reduced_features = [
+            feature
+            for feature in feature_columns
+            if feature != feature_to_remove
+        ]
+
+        X_reduced = df[reduced_features]
+
+        X_reduced_train = X_reduced.iloc[train_idx]
+        X_reduced_test = X_reduced.iloc[test_idx]
+
+        reduced_scaler = StandardScaler()
+
+        X_reduced_train_scaled = reduced_scaler.fit_transform(
+            X_reduced_train
+        )
+
+        X_reduced_test_scaled = reduced_scaler.transform(
+            X_reduced_test
+        )
+
+        reduced_model = LogisticRegression(
+            max_iter=2000,
+            random_state=42
+        )
+
+        reduced_model.fit(
+            X_reduced_train_scaled,
+            y_train
+        )
+
+        reduced_predictions = reduced_model.predict(
+            X_reduced_test_scaled
+        )
+
+        reduced_accuracy = accuracy_score(
+            y_test,
+            reduced_predictions
+        )
+
+        ablation_results[
+            feature_to_remove
+        ].append(
+            reduced_accuracy
+        )
+
+
+print("\nMultiple Split Structural Results:")
+
+full_mean = sum(multi_split_results) / len(multi_split_results)
+full_std = statistics.stdev(multi_split_results)
+
+print(
+    "Full model:",
+    f"{full_mean:.2%} ± {full_std:.2%}"
+)
+
+for feature, scores in ablation_results.items():
+
+    mean_accuracy = sum(scores) / len(scores)
+    std_accuracy = statistics.stdev(scores)
+
+    print(
+        f"Without {feature}: "
+        f"{mean_accuracy:.2%} ± {std_accuracy:.2%}"
+    )
+
+
+    
 structural_coef = pd.Series(
     structural_model.coef_[0],
     index=feature_columns
@@ -154,7 +342,7 @@ structural_coef = pd.Series(
 # print("\n")
 # print(df.groupby("label")["punctuation_rate"].mean())
 
-print(df.groupby("label")[feature_columns].mean())
+print("\n",df.groupby("label")[feature_columns].mean())
 
 print("\nTF-IDF accuracy:", f"{accuracy:.2%}")
 print("Structural accuracy:", f"{structural_accuracy:.2%}")
